@@ -31,13 +31,20 @@ body {
 }
 
 button {
-  margin: 0;
-  padding: 0;
-  border: none;
+  margin: 1rem 0 0;
+  border-radius: 28px;
+  padding: 1rem 2.5rem;
+  border: 1px solid;
   background: transparent;
   cursor: pointer;
   text-align: left;
   color: inherit;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+button:hover {
+  opacity: 0.8;
 }
 
 .wrapper {
