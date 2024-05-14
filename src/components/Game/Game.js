@@ -50,7 +50,11 @@ function Game() {
         <div className="happy banner">
           <p>
             <strong>Congratulations!</strong> Got it in{" "}
-            <strong>{guessList.length} guesses.</strong>
+            <strong>
+              {guessList.length === 1
+                ? "1 guess"
+                : `${guessList.length} guesses`}
+            </strong>
           </p>
           <button onClick={handleRestart}>Restart</button>
         </div>
